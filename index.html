@@ -19,7 +19,6 @@ body {
 	padding 0;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
-	--background-image: url(Images/BGimg.png)
 	}
 		
 .container {
@@ -45,6 +44,7 @@ a.top {
 	margin: 0 auto;
 	display: block;
     top: 0px;
+	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
 	}
 .videoPlayer {
 	position: relative;
@@ -54,9 +54,7 @@ a.top {
 	padding-top: 45px;
 	padding-bottom: 32.25%; /* 16:9 */
 	height: 0;
-	-webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.12);
-	-moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.12);
-	box-shadow: 0 10x 12px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 .videoPlayer iframe {
 	position: absolute;
@@ -70,23 +68,39 @@ a.top {
 	max-width: 900px;
 	padding: 0;
 	}
+.experienceWrapper, .educationWrapper, .skillsWrapper {
+	margin-left: 175px;
+	width: 100%;
+	display: table;
+
+	}
+.experienceContent, .educationContent, .skillsContent {
+	float: right;
+	display: table-cell;
+	width: 100%;
+}
+.experienceSidebar, .educationSidebar, .skillsSidebar {
+	float: left;
+	width: 175px;
+	display: table-cell;
+	margin-left: -175px;
+}
+.skillColumn1, .skillColumn2, .skillColumn3 {
+	display: table-cell;
+	width: auto;
+	float:left;
+	padding: 1em;
+	text-align: left;
+	} 
 .portfolio {
 	width: inherit;
 	max-width: 900px;
 	height:auto;
 	padding: 0;
 	}
-.experience {
+.experience, .education, .skills {
 	width: inherit;
 	max-width: 700px;	
-	margin-top: 10px;
-	margin-left: 20px;
-	margin-right: 180px;
-	padding: 0;
-	}
-.education {
-	width: inherit;
-	max-width: 700px;
 	margin-top: 10px;
 	margin-left: 20px;
 	margin-right: 180px;
@@ -121,7 +135,7 @@ a.top {
 	font-size:22px;
 	font-weight:bold;
 	background-color:transparent;
-	color:#999;
+	color:#c0504d;
 	font face: veranda;
 	}
 .subtitle {
@@ -225,20 +239,24 @@ function setURL(url){
 
 <br><hr color="cccccc">
 
-	<p align="left">
-	<span class="title">
-		Employment</span></p>
+<div class="experienceWrapper">
+	<div class="experienceSidebar">
+		<p align="left">
+			<span class="title">Employment</span>
+		</p>
+	</div>
 
-<div class="experience">
-
-	<p align="left">
-		<span class="header1">Cinematic Designer</span><br>
-	  <span class="subheader">Bioware Austin | November 2014 - Present</span></p>
+<div class="experienceContent">
+	<div class="experience">
+		<p align="left">
+			<span class="header1">Cinematic Designer</span><br>
+	 		<span class="subheader">Bioware Austin | November 2014 - Present</span>
+	 	</p>
 
 	<p align="left" style="font-weight:normal; color:#000; font-size:14px; margin-left:20px;">
-		▪ Produce interactive in-game cinematics that are cohesively integrated into the game world.<br>
+		▪ Produce interactive cinematics that are cohesively integrated into the game world.<br>
 		▪ Block out cameras, actors, and visual effects within each scene.<br>
-		▪ Select and blend animations to create believable character movement and interactions.<br>		
+		▪ Select and blend animations to create believable character interactions.<br>		
 		▪ Collaborate with artists and designers to create audio and visual effects.<br>
 		▪ Partner with design lead to identify polish and iteration tasks.<br>
 	</p>    
@@ -277,13 +295,21 @@ function setURL(url){
 		▪ Worked closely with developers to debug new and updated tools.<br>
 		▪ Rigorously tested, and developed test plans for world building tools.</p>
 </div>
+<!--end educationContent div-->   	
+</div>
+<!--end educationWrapper div-->
+</div>
 
 <br><hr color="cccccc">
-    
-<p align="left">
-    <span class="title">
-		Education</span></p>    
-    
+
+<div class="educationWrapper">
+<div class="educationSidebar">    
+	<p align="left">
+    	<span class="title">Education</span>
+ 	</p>    
+</div>
+
+<div class="educationContent">    
 <div class="education">
 
 	<p align="left">
@@ -291,7 +317,7 @@ function setURL(url){
 		<span class="subheader"> Game Design program | March 2010 - February 2011</span></p>
     
 	<p align="left" style="font-weight:normal; color:#000; font-size:14px;  margin-left:20px;">
-		The Game Design program at VFS provided me with an opportunity to work closely with video game industry mentors in an environment that mirrored that of a professional studio. Over the course of a year I created detailed design documents, complex levels featuring intricate interactions that won an award for "Best Level Design", and a fully playable game that was designed, produced, and presented in just four short months.</p>
+		The Game Design program at VFS provided me with the opportunity to work closely with video game industry mentors in an environment that mirrored that of a professional studio. Over the course of a year I created detailed design documents, complex levels featuring intricate interactions that won an award for "Best Level Design", and a fully playable game that was designed, produced, and presented in just four short months.</p>
     
 	<br>
     
@@ -303,14 +329,58 @@ function setURL(url){
 		Hands-on courses that covered digital and print media including the core elements and principles of design, 3D modeling and animation, website design, digital video editing and special effects using live video footage and CGI, and a wide variety of industry standard programs.
 	</p>
 
+</div>
+<!--end education div-->
 </div>    
+<!--end wrapper div-->
+</div>
+  
+<br><hr color="cccccc">    
+        
+<div class="skillsWrapper">
+<div class="skillsSidebar">    
+	<p align="left">
+    	<span class="title">Expertise</span>
+ 	</p>    
+</div>
+
+<div class="skillsContent">
+<div class="skills">
+
+<div class="skillColumn1">
+	<li>Cinematic Design</li>
+	<li>Quality Assurance</li>
+	<li>Game Design</li>
+	<li>Hansoft</li>
+</div>
+
+<div class="skillColumn2">
+	<li>Unreal Engine 4</li>
+	<li>Hero Engine (swtor)</li>
+	<li>Autodesk Maya</li>
+	<li>DevTrack</li>
+</div>
+
+<div class="skillColumn3">
+	<li>Photoshop</li>
+	<li>Illustrator</li>
+	<li>Premiere</li>
+
+
+</div>
+
+</div>
+</div>
+</div>  
+    
+    
     
 <br class="clearfloat">                
 <div class="footer">
 <hr color="cccccc">
 	<p align="left"> 
 		© 2016 Chris Pesce   
-		<a href="https://www.linkedin.com/in/cjpesce" target="_blank"><img src="Buttons/linkedin.png" width="22" height="20" align="right"/></a> 
+		<a href="https://www.linkedin.com/in/cjpesce" target="_blank"><img src="Buttons/linkedin.png" width="22" height="20" align="right"/></a>
 	</p>   
 </div>
 </div>

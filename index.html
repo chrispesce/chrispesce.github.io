@@ -46,13 +46,13 @@ a.top {
 	}
 		
 .header {
-	position: fixed;
+	/*position: fixed;*/
 	background-color: #F0F0F0;
 	width: 100%;
 	text-align: center;
-	padding-top: 15px;
+	margin-top: 20px;
 	display: block;
-    top: 0px;
+    top: -25px;
 	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
 	line-height: 22px;
 	}
@@ -82,10 +82,9 @@ a.top {
 	position: relative;
 	width: inherit;
 	background-color: #000000;
-	margin-top: 5em;
+	margin-top: 1em;
 	padding-top: 45px;
-	padding-bottom: 32.25%; /* 16:9 */
-	height: 0;
+	padding-bottom: 25.25%; /* 16:9 */
 	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 	
@@ -101,16 +100,25 @@ a.top {
 .mainContent {
 	width: inherit;
 	min-width: 200px;
-	max-width: 900px;
+	max-width: auto;
 	padding-top: 35px;
+	align-content: flex-start;
+	}
+	
+	.maincontent img{
+		height:auto;
+		width:auto;
+		
 	}
 
 .footer {
+	margin-top: 5em;
 	padding: 0;
 	font-size: 10px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	background-color: #EEEEEE;
 	} 
 
 
@@ -170,7 +178,7 @@ function setURL(url){
 <!-- handled in CSS -->
 <span class="NameFirst">Christopher </span><span class="NameLast">Pesce</span><br>
 <span class="Subtitle">Narrative System Designer at Bioware</span>	
-<a href="https://www.linkedin.com/in/cjpesce" target="_blank"><img style=" vertical-align: -4px;" src="Buttons/linkedin.png"  width="22" height="20"/></a>
+<a href="https://www.linkedin.com/in/cjpesce" target="_blank"><img style="vertical-align: -4px;" src="Buttons/linkedin.png" width="22" height="20"/></a>
 </div>
 
 <div class="container" align="center">
@@ -181,11 +189,13 @@ function setURL(url){
 <iframe id="iframe" src="https://player.vimeo.com/video/192029538?portrait=0" width="auto" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-<div class="mainContent"> 
+<div class="mainContent">
 
-<a href="#top" onclick="setURL('https://player.vimeo.com/video/192029538?title=0&amp;portrait=0&amp;color=007bb6')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kotfe','','Images/Tiles/kotfe2015_over.png',1)"><img src="Images/Tiles/kotfe2015_off.png" width="45%" height="45%" id="kotfe" border="0"></a>
+<a href="#top" onClick="setURL('https://player.vimeo.com/video/192029538?title=0&amp;portrait=0&amp;color=007bb6')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kotfe','','Images/Tiles/kotfe2015_over.png',1)"><img style="max-width: 100%; height:auto;" src="Images/Tiles/kotfe2015_off.png" id="kotfe" border="0" width="18%"></a>
 
-<a href="#top" onclick="setURL('https://player.vimeo.com/video/192554479?title=0&amp;portrait=0&amp;color=007bb6')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kotet','','Images/Tiles/kotet2016_over.png',1)"><img src="Images/Tiles/kotet2016_off.png" width="45%" height="45%" id="kotet" border="0"></a>
+<a href="#top" onClick="setURL('https://player.vimeo.com/video/192554479?title=0&amp;portrait=0&amp;color=007bb6')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kotet','','Images/Tiles/kotet2016_over.png',1)"><img style="max-width: 100%; height:auto;" src="Images/Tiles/kotet2016_off.png" id="kotet" border="0" width="18%"></a>
+
+<a href="#top" onClick="setURL('https://player.vimeo.com/video/284288951?title=0&amp;portrait=0&amp;color=007bb6')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('anthem','','Images/Tiles/anthem2017_over.png',1)"><img style="max-width: 100%; height:auto;" src="Images/Tiles/anthem2017_off.png" id="anthem" border="0" width="18%"></a>
 
 </div>
                
@@ -195,6 +205,7 @@ function setURL(url){
 		© 2007 - 2018 Chris Pesce   
 
 		</p>   
+</div>
 </div>
 </body>
 </html>

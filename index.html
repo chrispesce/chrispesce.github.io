@@ -91,20 +91,18 @@ body {
 			}
 		}
 
-
-	
-	@media only screen and (min-width: 851px) {
+	@media only screen and (min-width: 1051px) {
 		.bio {
 			text-align: center;
 			font-size:18px;
 			margin-top: 12px;
-			padding-left: 12%;
-			padding-right: 12%;
+			padding-left: 18%;
+			padding-right: 18%;
 			line-height:120%;
 			}
 		}
 	
-	@media only screen and (max-width: 850px) {
+	@media only screen and (max-width: 1050px) {
 		.bio {
 			text-align: center;
 			font-size:16px;
@@ -115,24 +113,30 @@ body {
 			}
 		}
 	
-	@media only screen and (max-width: 405px) {
+	@media only screen and (max-width: 501px) {
+		.bio {
+			display: none;
+			}
+		}
+	
+	@media only handheld {
 		.bio {
 			display: none;
 			}
 		}
 
-@media only screen and (min-width: 851px) {		
+@media only screen and (min-width: 1051px) {		
 	.videoPlayer {
 		position: relative;
 		width: inherit;
 		background-color: #000000;
 		margin-top: 1em;
 		padding-top: 45px;
-		padding-bottom: 25.25%; /* 16:9 */
+		padding-bottom: 22.25%; /* 16:9 */
 		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1050px) {
 	.videoPlayer {
 		position: relative;
 		width: inherit;
@@ -152,6 +156,7 @@ body {
 		height: 100%;
 		}
 	
+@media only screen and (min-width: 502px) {	
 	.mainContent {
 		padding-top: 20px;
 		padding-left: 25px;
@@ -170,115 +175,27 @@ body {
 		.tileimage img{
 			max-width: 100%;
 		}
-</style>
-
-<style media="handheld" type="text/css"> 
-	@font-face {
-		font-family: 'roboto-bold';
-		src:url('Fonts/Roboto-Bold.ttf') format('truetype');
-	}
-	@font-face {
-		font-family: 'roboto-light';
-		src:url('Fonts/Roboto-Light.ttf') format('truetype');
-	}
-
-body {
-	font: 100%/1.4 roboto-light, sans-serif;
-	background-color: #F0F0F0;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-attachment: fixed;
-	background-repeat: repeat-x;
-	}
-		
-.container {
-	width: 100%;
-    margin: 0 auto;
-	}
-			
-.header {
-	/*position: fixed;*/
-	background-color: #F0F0F0;
-	width: 100%;
-	text-align: center;
-	margin-top: 20px;
-	display: block;
-    top: -25px;
-	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
-	line-height: 22px;
-	}
-		.NameFirst {
-			font-size:32px;
-			font-family: roboto-light;
-			background-color:transparent;
-			color:#09a2dd;
-			}
-		
-		.NameLast {
-			font-size:32px;
-			font-family: roboto-bold;
-			background-color:transparent;
-			color:#000;
-			}
-		
-		.Subtitle {
-			font-size:16px;
-			font-weight:normal;
-			background-color:transparent;
-			color:#666;
-			line-height:20%;	
-			}
-
-		.bio {
-			text-align: center;
-			font-size:14px;
-			margin-top: 15px;
-			padding-left: 2%;
-			padding-right: 2%;
-			}
-
-	
-	
-.videoPlayer {
-	position: relative;
-	width: inherit;
-	background-color: #000000;
-	margin-top: 1em;
-	padding-top: 45px;
-	padding-bottom: 40.25%; /* 16:9 */
-	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
-	}
-	
-	.videoPlayer iframe {
-		position: absolute;
-		background-color: #000000;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		}
-
+	}	
+@media only screen and (max-width: 501px) {	
 	.mainContent {
-		padding-top: 32px;
+		padding-top: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
- 		white-space: nowrap;
-  		width: auto;
-  		display: table;
+        list-style-type: none;
 		}
 
 		.tileimage {
-			vertical-align: middle;
 			padding: 2px;
-			display: table-cell;
+			display: inline-block;
+
 		}
 
 		.tileimage img{
-			max-width: 100%;
+			max-width: 65%;
 		}
+	}
 </style>
+
 
 <!--Image Rollovers-->
 <script type="text/javascript">

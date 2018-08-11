@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+	@font-face {
+		font-family: 'roboto-bold';
+		src:url('Fonts/Roboto-Bold.ttf') format('truetype');
+	}
+	@font-face {
+		font-family: 'roboto-light';
+		src:url('Fonts/Roboto-Light.ttf') format('truetype');
+	}
+			
+
+body {
+	font: 100%/1.4 roboto-light, sans-serif;
+	background-color: #F0F0F0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	}
+		
+.container {
+	width: 100%;
+    margin: 0 auto;
+	}
+	
+a.top {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+	}
+		
+.header {
+	/*position: fixed;*/
+	background-color: #F0F0F0;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+    top: -25px;
+	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
+	line-height: 22px;
+	}
+	@media only screen and (min-width: 371px) {
+		.NameFirst {
+			font-size:43px;
+			font-family: roboto-light;
+			background-color:transparent;
+			color:#09a2dd;
+			}
+		
+		.NameLast {
+			font-size:43px;
+			font-family: roboto-bold;
+			background-color:transparent;
+			color:#000;
+			}
+		
+		.Subtitle {
+			font-size:19px;
+			font-weight:normal;
+			background-color:transparent;
+			color:#666;
+			line-height:20%;	
+			}
+	}
+		
+	@media only screen and (max-width: 370px) {
+		.NameFirst {
+			font-size:34px;
+			font-family: roboto-light;
+			background-color:transparent;
+			color:#09a2dd;
+			}
+		
+		.NameLast {
+			font-size:34px;
+			font-family: roboto-bold;
+			background-color:transparent;
+			color:#000;
+			}
+		
+		.Subtitle {
+			font-size:15px;
+			font-weight:normal;
+			background-color:transparent;
+			color:#666;
+			line-height:10%;	
+			}
+		}
+
+
+	
+	@media only screen and (min-width: 851px) {
+		.bio {
+			text-align: center;
+			font-size:18px;
+			margin-top: 12px;
+			padding-left: 14%;
+			padding-right: 14%;
+			line-height:120%;
+			}
+		}
+	
+	@media only screen and (max-width: 850px) {
+		.bio {
+			text-align: center;
+			font-size:18px;
+			margin-top: 12px;
+			padding-left: 4%;
+			padding-right: 4%;
+			line-height:120%;
+			}
+		}
+	
+	@media only screen and (max-width: 550px) {
+		.bio {
+			display: none;
+			}
+		}
+
+	
+.videoPlayer {
+	position: relative;
+	width: inherit;
+	background-color: #000000;
+	margin-top: 1em;
+	padding-top: 45px;
+	padding-bottom: 25.25%; /* 16:9 */
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+	}
+	
+	.videoPlayer iframe {
+		position: absolute;
+		background-color: #000000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		}
+	
+
+	
+.mainContent {
+	width: inherit;
+	min-width: 10%;
+	max-width: 70%;
+	padding-top: 35px;
+	align-content: flex-start;
+	}
+	
+	#kotfe, #kotet, #anthem {
+		min-width: 275px !important;
+		}

@@ -59,14 +59,12 @@ body {
 			line-height:20%;	
 			}
 
-		
 		.bio {
 			text-align: center;
 			font-size:14px;
-			margin-top: 12px;
-			padding-left: 4%;
-			padding-right: 4%;
-			line-height:120%;
+			margin-top: 15px;
+			padding-left: 2%;
+			padding-right: 2%;
 			}
 
 	
@@ -77,7 +75,7 @@ body {
 	background-color: #000000;
 	margin-top: 1em;
 	padding-top: 45px;
-	padding-bottom: 15.25%; /* 16:9 */
+	padding-bottom: 40.25%; /* 16:9 */
 	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 	
@@ -90,12 +88,21 @@ body {
 		height: 100%;
 		}
 
-.mainContent {
-	width: inherit;
-	padding-top: 35px;
-	align-content: flex-start;
-	}
-	
-	#kotfe, #kotet, #anthem {
-		min-width: 375px !important;
+	.mainContent {
+		padding-top: 32px;
+		padding-left: 5px;
+		padding-right: 5px;
+ 		white-space: nowrap;
+  		width: auto;
+  		display: table;
+		}
+
+		.tileimage {
+			vertical-align: middle;
+			padding: 2px;
+			display: table-cell;
+		}
+
+		.tileimage img{
+			max-width: 100%;
 		}

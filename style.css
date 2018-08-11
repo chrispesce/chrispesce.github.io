@@ -1,12 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
-	@font-face {
+	
+@font-face {
 		font-family: 'roboto-bold';
 		src:url('Fonts/Roboto-Bold.ttf') format('truetype');
 	}
 	@font-face {
 		font-family: 'roboto-light';
 		src:url('Fonts/Roboto-Light.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'roboto-thin';
+		src:url('Fonts/Roboto-Thin.ttf') format('truetype');
 	}
 			
 
@@ -35,12 +41,12 @@ body {
 	display: block;
     top: -25px;
 	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
-	line-height: 22px;
+	line-height: 24px;
 	}
 	@media only screen and (min-width: 371px) {
 		.NameFirst {
 			font-size:43px;
-			font-family: roboto-light;
+			font-family: roboto-thin;
 			background-color:transparent;
 			color:#09a2dd;
 			}
@@ -48,23 +54,17 @@ body {
 		.NameLast {
 			font-size:43px;
 			font-family: roboto-bold;
-			background-color:transparent;
-			color:#000;
 			}
 		
 		.Subtitle {
 			font-size:19px;
-			font-weight:normal;
-			background-color:transparent;
-			color:#666;
-			line-height:20%;	
 			}
 	}
 		
 	@media only screen and (max-width: 370px) {
 		.NameFirst {
 			font-size:34px;
-			font-family: roboto-light;
+			font-family: roboto-thin;
 			background-color:transparent;
 			color:#09a2dd;
 			}
@@ -72,16 +72,11 @@ body {
 		.NameLast {
 			font-size:34px;
 			font-family: roboto-bold;
-			background-color:transparent;
-			color:#000;
+
 			}
 		
 		.Subtitle {
 			font-size:15px;
-			font-weight:normal;
-			background-color:transparent;
-			color:#666;
-			line-height:10%;	
 			}
 		}
 
@@ -92,8 +87,8 @@ body {
 			text-align: center;
 			font-size:18px;
 			margin-top: 12px;
-			padding-left: 14%;
-			padding-right: 14%;
+			padding-left: 12%;
+			padding-right: 12%;
 			line-height:120%;
 			}
 		}
@@ -101,7 +96,7 @@ body {
 	@media only screen and (max-width: 850px) {
 		.bio {
 			text-align: center;
-			font-size:18px;
+			font-size:16px;
 			margin-top: 12px;
 			padding-left: 4%;
 			padding-right: 4%;
@@ -109,23 +104,34 @@ body {
 			}
 		}
 	
-	@media only screen and (max-width: 550px) {
+	@media only screen and (max-width: 405px) {
 		.bio {
 			display: none;
 			}
 		}
 
-	
-.videoPlayer {
-	position: relative;
-	width: inherit;
-	background-color: #000000;
-	margin-top: 1em;
-	padding-top: 45px;
-	padding-bottom: 25.25%; /* 16:9 */
-	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+@media only screen and (min-width: 851px) {		
+	.videoPlayer {
+		position: relative;
+		width: inherit;
+		background-color: #000000;
+		margin-top: 1em;
+		padding-top: 45px;
+		padding-bottom: 25.25%; /* 16:9 */
+		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
-	
+}
+@media only screen and (max-width: 850px) {
+	.videoPlayer {
+		position: relative;
+		width: inherit;
+		background-color: #000000;
+		margin-top: 1em;
+		padding-top: 45px;
+		padding-bottom: 40.25%; /* 16:9 */
+		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+	}
+}
 	.videoPlayer iframe {
 		position: absolute;
 		background-color: #000000;
@@ -135,16 +141,21 @@ body {
 		height: 100%;
 		}
 	
+	.mainContent {
+		padding-top: 20px;
+		padding-left: 25px;
+		padding-right: 25px;
+ 		white-space: nowrap;
+  		width: auto;
+  		display: table;
+		}
 
-	
-.mainContent {
-	width: inherit;
-	min-width: 10%;
-	max-width: 70%;
-	padding-top: 35px;
-	align-content: flex-start;
-	}
-	
-	#kotfe, #kotet, #anthem {
-		min-width: 275px !important;
+		.tileimage {
+			vertical-align: middle;
+			padding: 2px;
+			display: table-cell;
+		}
+
+		.tileimage img{
+			max-width: 100%;
 		}

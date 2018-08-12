@@ -5,16 +5,15 @@
 		font-family: 'roboto-bold';
 		src:url('Fonts/Roboto-Bold.ttf') format('truetype');
 	}
-	@font-face {
+@font-face {
 		font-family: 'roboto-light';
 		src:url('Fonts/Roboto-Light.ttf') format('truetype');
 	}
 
-	@font-face {
+@font-face {
 		font-family: 'roboto-thin';
 		src:url('Fonts/Roboto-Thin.ttf') format('truetype');
-	}
-			
+	}			
 
 body {
 	font: 100%/1.4 roboto-light, sans-serif;

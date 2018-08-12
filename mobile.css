@@ -1,13 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
-	@font-face {
+@font-face {
 		font-family: 'roboto-bold';
 		src:url('Fonts/Roboto-Bold.ttf') format('truetype');
 	}
-	@font-face {
+@font-face {
 		font-family: 'roboto-light';
 		src:url('Fonts/Roboto-Light.ttf') format('truetype');
+	}
+
+@font-face {
+		font-family: 'roboto-thin';
+		src:url('Fonts/Roboto-Thin.ttf') format('truetype');
 	}
 
 body {
@@ -60,11 +65,7 @@ body {
 			}
 
 		.bio {
-			text-align: center;
-			font-size:14px;
-			margin-top: 15px;
-			padding-left: 2%;
-			padding-right: 2%;
+			display:none;
 			}
 
 	
@@ -89,20 +90,18 @@ body {
 		}
 
 	.mainContent {
-		padding-top: 32px;
+		padding-top: 15px;
 		padding-left: 5px;
 		padding-right: 5px;
- 		white-space: nowrap;
-  		width: auto;
-  		display: table;
+        list-style-type: none;
 		}
 
 		.tileimage {
-			vertical-align: middle;
 			padding: 2px;
-			display: table-cell;
+			display: inline-block;
+
 		}
 
 		.tileimage img{
-			max-width: 100%;
+			max-width: 65%;
 		}

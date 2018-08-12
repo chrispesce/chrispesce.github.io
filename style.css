@@ -80,20 +80,18 @@ body {
 			}
 		}
 
-
-	
-	@media only screen and (min-width: 851px) {
+	@media only screen and (min-width: 1051px) {
 		.bio {
 			text-align: center;
 			font-size:18px;
 			margin-top: 12px;
-			padding-left: 12%;
-			padding-right: 12%;
+			padding-left: 18%;
+			padding-right: 18%;
 			line-height:120%;
 			}
 		}
 	
-	@media only screen and (max-width: 850px) {
+	@media only screen and (max-width: 1050px) {
 		.bio {
 			text-align: center;
 			font-size:16px;
@@ -104,24 +102,24 @@ body {
 			}
 		}
 	
-	@media only screen and (max-width: 405px) {
+	@media only screen and (max-width: 501px) {
 		.bio {
 			display: none;
 			}
 		}
 
-@media only screen and (min-width: 851px) {		
+@media only screen and (min-width: 1051px) {		
 	.videoPlayer {
 		position: relative;
 		width: inherit;
 		background-color: #000000;
 		margin-top: 1em;
 		padding-top: 45px;
-		padding-bottom: 25.25%; /* 16:9 */
+		padding-bottom: 22.25%; /* 16:9 */
 		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1050px) {
 	.videoPlayer {
 		position: relative;
 		width: inherit;
@@ -141,6 +139,7 @@ body {
 		height: 100%;
 		}
 	
+@media only screen and (min-width: 502px) {	
 	.mainContent {
 		padding-top: 20px;
 		padding-left: 25px;
@@ -159,3 +158,22 @@ body {
 		.tileimage img{
 			max-width: 100%;
 		}
+	}	
+@media only screen and (max-width: 501px) {	
+	.mainContent {
+		padding-top: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+        list-style-type: none;
+		}
+
+		.tileimage {
+			padding: 2px;
+			display: inline-block;
+
+		}
+
+		.tileimage img{
+			max-width: 65%;
+		}
+	}

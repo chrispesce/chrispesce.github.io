@@ -41,7 +41,7 @@ body {
 	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
 	line-height: 38px;
 	}
-	@media only screen and (min-width: 371px) {
+	@media only screen and (min-width: 371px) {	
 		.NameFirst {
 			font-size:80px;
 			font-family: Georga;
@@ -58,15 +58,18 @@ body {
 			}
 	}
 		
-		@media only screen and (max-width: 1220px) {
+		@media only screen and (max-width: 615px) {
+		.header {
+		line-height: 32px;
+			}
 		.NameFirst {
-			font-size:65px;
+			font-size:64px;
 			font-family: georga;
 			background-color:transparent;
 			}
 		
 		.NameLast {
-			font-size:65px;
+			font-size:64px;
 			font-family: georgia;
 			}
 		
@@ -76,6 +79,9 @@ body {
 		}
 		
 	@media only screen and (max-width: 501px) {
+		.header {
+		line-height: 30px;
+			}
 		.NameFirst {
 			font-size:60px;
 			font-family: georga;
@@ -131,7 +137,7 @@ body {
 		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
 }
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1120px) {
 	.videoPlayer {
 		position: relative;
 		width: inherit;
@@ -151,7 +157,7 @@ body {
 		height: 100%;
 		}
 	
-@media only screen and (min-width: 502px) {	
+@media only screen and (min-width: 616px) {	
 	.mainContent {
 		padding-top: 20px;
 		padding-left: 5px;
@@ -171,7 +177,7 @@ body {
 			max-width: 100%;
 		}
 	}	
-@media only screen and (max-width: 501px) {	
+@media only screen and (max-width: 615px) {	
 	.mainContent {
 		padding-top: 15px;
 		padding-left: 5px;
@@ -180,12 +186,11 @@ body {
 		}
 
 		.tileimage {
-			padding: 2px;
+			padding: 8px;
 			display: inline-block;
-
 		}
 
 		.tileimage img{
-			max-width: 65%;
+			max-width: 60%;
 		}
 	}

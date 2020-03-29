@@ -2,21 +2,21 @@
 /* CSS Document */
 	
 @font-face {
-		font-family: 'Barlow-Bold';
-		src:url('Fonts/Barlow-Bold.ttf') format('truetype');
+		font-family: 'JosefinSans-Bold';
+		src:url('Fonts/JosefinSans-Bold.ttf') format('truetype');
 	}
 @font-face {
-		font-family: 'Barlow-Light';
-		src:url('Fonts/Barlow-Light.ttf') format('truetype');
+		font-family: 'JosefinSans-Light';
+		src:url('Fonts/JosefinSans-Light.ttf') format('truetype');
 	}
 
 @font-face {
-		font-family: 'Barlow-Regular';
-		src:url('Fonts/Barlow-Regular.ttf') format('truetype');
+		font-family: 'JosefinSans-Regular';
+		src:url('Fonts/JosefinSans-Regular.ttf') format('truetype');
 	}			
 
 body {
-	font: 100%/1.4 Barlow-Light, sans-serif;
+	font: 100%/1.4 JosefinSans-Regular, sans-serif;
 	background-color: #F0F0F0;
 	width: 100%;
 	height: 100%;
@@ -24,8 +24,8 @@ body {
 	padding: 0;
 	background-attachment: fixed;
 	background-repeat: repeat-x;
-	}
-		
+	}	
+	
 .container {
 	width: 100%;
     margin: 0 auto;
@@ -39,115 +39,42 @@ body {
 	margin-top: 32px;
 	display: block;
 	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
-	line-height: 38px;
+	line-height: 46px;
 	}
-	@media only screen and (min-width: 371px) {	
 		.NameFirst {
 			font-size:80px;
-			font-family: Georga;
+			font-family: JosefinSans-Light;
 			background-color:transparent;
 			}
 		
 		.NameLast {
 			font-size:80px;
-			font-family: georgia;
+			font-family: JosefinSans-Regular;
 			}
+		
 		
 		.Subtitle {
-			font-size:25px;
+			font-size:63.5px;
+			font-family: JosefinSans-Light;
 			}
-	}
-		
-		@media only screen and (max-width: 615px) {
-		.header {
-		line-height: 32px;
-			}
-		.NameFirst {
-			font-size:64px;
-			font-family: georga;
-			background-color:transparent;
-			}
-		
-		.NameLast {
-			font-size:64px;
-			font-family: georgia;
-			}
-		
-		.Subtitle {
-			font-size:20px;
-			}
-		}
-		
-	@media only screen and (max-width: 501px) {
-		.header {
-		line-height: 30px;
-			}
-		.NameFirst {
-			font-size:60px;
-			font-family: georga;
-			background-color:transparent;
-			}
-		
-		.NameLast {
-			font-size:60px;
-			font-family: georgia;
-			}
-		
-		.Subtitle {
-			font-size:18px;
-			}
-		}
 
-	@media only screen and (min-width: 1051px) {
-		.bio {
-			text-align: center;
-			font-size:18px;
-			margin-top: 12px;
-			padding-left: 18%;
-			padding-right: 18%;
-			line-height:120%;
-			}
-		}
-	
-	@media only screen and (max-width: 1050px) {
-		.bio {
-			text-align: center;
-			font-size:16px;
-			margin-top: 12px;
-			padding-left: 4%;
-			padding-right: 4%;
-			line-height:120%;
-			}
-		}
-	
-	@media only screen and (max-width: 501px) {
-		.bio {
-			display: none;
-			}
-		}
 
-@media only screen and (min-width: 1051px) {		
-	.videoPlayer {
-		position: relative;
-		width: inherit;
-		background-color: #000000;
-		margin-top: 1em;
-		padding-top: 45px;
-		padding-bottom: 22.25%; /* 16:9 */
-		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
+		.bio {
+			display:none;
+			}
+
+	
+	
+.videoPlayer {
+	position: relative;
+	width: inherit;
+	background-color: #000000;
+	margin-top: 1em;
+	padding-top: 45px;
+	padding-bottom: 40.25%; /* 16:9 */
+	box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
 	}
-}
-@media only screen and (max-width: 1120px) {
-	.videoPlayer {
-		position: relative;
-		width: inherit;
-		background-color: #000000;
-		margin-top: 1em;
-		padding-top: 45px;
-		padding-bottom: 40.25%; /* 16:9 */
-		box-shadow: 0 10px 12px rgba(0, 0, 0, 0.25);
-	}
-}
+	
 	.videoPlayer iframe {
 		position: absolute;
 		background-color: #000000;
@@ -156,41 +83,23 @@ body {
 		width: 100%;
 		height: 100%;
 		}
-	
-@media only screen and (min-width: 616px) {	
-	.mainContent {
-		padding-top: 20px;
-		padding-left: 5px;
-		padding-right: 5px;
- 		white-space: nowrap;
-  		width: auto;
-  		display: table;
-		}
 
-		.tileimage {
-			vertical-align: middle;
-			padding: 2px;
-			display: table-cell;
-		}
-
-		.tileimage img{
-			max-width: 100%;
-		}
-	}	
-@media only screen and (max-width: 615px) {	
 	.mainContent {
-		padding-top: 15px;
+		padding-top: 55px;
 		padding-left: 5px;
 		padding-right: 5px;
         list-style-type: none;
 		}
 
-		.tileimage {
-			padding: 8px;
-			display: inline-block;
+		.tileimage-left {
+			float:left;
+			width:50%;
+			display: table;
+			clear:both;
 		}
-
-		.tileimage img{
-			max-width: 60%;
+		
+		.tileimage-right {
+		content: "";
+		display: table;
 		}
 	}

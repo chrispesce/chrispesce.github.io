@@ -2,21 +2,21 @@
 /* CSS Document */
 	
 @font-face {
-		font-family: 'JosefinSans-Bold';
-		src:url('Fonts/JosefinSans-Bold.ttf') format('truetype');
+		font-family: 'Comfortaa-Bold';
+		src:url('Fonts/Comfortaa-Bold.ttf') format('truetype');
 	}
 @font-face {
-		font-family: 'JosefinSans-Light';
-		src:url('Fonts/JosefinSans-Light.ttf') format('truetype');
+		font-family: 'Comfortaa-Light';
+		src:url('Fonts/Comfortaa-Light.ttf') format('truetype');
 	}
 
 @font-face {
-		font-family: 'JosefinSans-Regular';
-		src:url('Fonts/JosefinSans-Regular.ttf') format('truetype');
+		font-family: 'Comfortaa-Regular';
+		src:url('Fonts/Comfortaa-Regular.ttf') format('truetype');
 	}			
 
 body {
-	font: 100%/1.4 JosefinSans-Regular, sans-serif;
+	font: 100%/1.4 Comfortaa-Regular, sans-serif;
 	background-color: #F0F0F0;
 	width: 100%;
 	height: 100%;
@@ -36,26 +36,26 @@ body {
 	background-color: #F0F0F0;
 	width: 100%;
 	text-align: center;
-	margin-top: 32px;
+	margin-top: 40px;
 	display: block;
 	box-shadow: 0 10px 12px rgba(240, 240, 240, 1);
-	line-height: 46px;
+	line-height: 40px;
 	}
 		.NameFirst {
-			font-size:80px;
-			font-family: JosefinSans-Light;
+			font-size:65px;
+			font-family: Comfortaa-Light;
 			background-color:transparent;
 			}
 		
 		.NameLast {
-			font-size:80px;
-			font-family: JosefinSans-Regular;
+			font-size:65px;
+			font-family: Comfortaa-Bold;
 			}
 		
 		
 		.Subtitle {
-			font-size:63.5px;
-			font-family: JosefinSans-Light;
+			font-size:35px;
+			font-family: Comfortaa-Light;
 			}
 
 

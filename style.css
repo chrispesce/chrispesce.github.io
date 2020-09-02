@@ -2,21 +2,21 @@
 /* CSS Document */
 	
 @font-face {
-		font-family: 'Comfortaa-Bold';
-		src:url('Fonts/Comfortaa-Bold.ttf') format('truetype');
+		font-family: 'Spectral-Bold';
+		src:url('Fonts/Spectral-Bold.ttf') format('truetype');
 	}
 @font-face {
-		font-family: 'Comfortaa-Light';
-		src:url('Fonts/Comfortaa-Light.ttf') format('truetype');
+		font-family: 'Spectral-Light';
+		src:url('Fonts/Spectral-Light.ttf') format('truetype');
 	}
 
 @font-face {
-		font-family: 'Comfortaa-Regular';
-		src:url('Fonts/Comfortaa-Regular.ttf') format('truetype');
+		font-family: 'Spectral-Regular';
+		src:url('Fonts/Spectral-Regular.ttf') format('truetype');
 	}			
 
 body {
-	font: 100%/1.4 Comfortaa-Regular, sans-serif;
+	font: 100%/1.4 Spectral-Regular, sans-serif;
 	background-color: #F0F0F0;
 	width: 100%;
 	height: 100%;
@@ -43,19 +43,19 @@ body {
 	}
 		.NameFirst {
 			font-size:65px;
-			font-family: Comfortaa-Light;
+			font-family: Spectral-Regular;
 			background-color:transparent;
 			}
 		
 		.NameLast {
 			font-size:65px;
-			font-family: Comfortaa-Bold;
+			font-family: Spectral-Regular;
 			}
 		
 		
 		.Subtitle {
 			font-size:35px;
-			font-family: Comfortaa-Light;
+			font-family: Spectral-Light;
 			}
 
 

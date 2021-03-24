@@ -22,6 +22,16 @@ body {
 	overflow: hidden; /* Hide scrollbars */
 	}	
 	
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1px;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 32px;
+}
+	
 #FullScreenVideo {
   padding:0px;
   margin:0px;
